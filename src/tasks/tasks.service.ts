@@ -78,7 +78,7 @@ export class TasksService {
   //   return task;
   // }
   async getTasks(filterDto: FilterDto): Promise<Task[]> {
-    returnyarn start:devicePixelRatio this.taskRepository.getTasks(filterDto);
+    return this.taskRepository.getTasks(filterDto);
   }
   async updateTaskById(id: string, status: TaskStatus): Promise<Task> {
     const task = await this.getTaskById(id);
